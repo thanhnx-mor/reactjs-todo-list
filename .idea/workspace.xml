@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a657f85-11df-45b8-af26-4ae5b84f908d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/to-do-list/AddTodo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/to-do-list/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/to-do-list/AddTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/to-do-list/AddTodo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/to-do-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/to-do-list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wp-activate.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../wp-admin/about.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../wp-admin/admin-ajax.php" beforeDir="false" />
@@ -2250,7 +2237,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZYe2PD15QvViVJF5TRg2cGq1bj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -2290,7 +2277,7 @@
       <workItem from="1585020333009" duration="3417000" />
       <workItem from="1585024133858" duration="2534000" />
       <workItem from="1585043514940" duration="7589000" />
-      <workItem from="1585195864120" duration="13794000" />
+      <workItem from="1585195864120" duration="16310000" />
     </task>
     <servers />
   </component>
@@ -2306,9 +2293,13 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="491" y="186" width="618" height="528" key="find.popup/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1585023975576" />
-    <state x="464" y="200" key="run.anything.popup" timestamp="1585212911160">
+    <state x="464" y="200" key="run.anything.popup" timestamp="1585218335303">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="464" y="200" key="run.anything.popup/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1585212911160" />
+    <state x="464" y="200" key="run.anything.popup/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1585218335303" />
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1585216364507">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="463" y="194" width="672" height="678" key="search.everywhere.popup/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1585216364507" />
   </component>
 </project>

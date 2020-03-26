@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AddTodo from "./AddTodo";
+import classnames from 'classnames'
 
 class MainToDoList extends Component {
     constructor(props) {
@@ -9,18 +10,18 @@ class MainToDoList extends Component {
                 {
                     id: 0,
                     name: 'Thanh dep trai',
-                    status: false,
+                    status: 1,
                 },
                 {
                     id: 1,
                     name: 'Thanh dep trai 02',
-                    status: true,
+                    status: 0,
                 },
             ],
             toDoSelected: {
                 id: 0,
                 name: '',
-                status: false,
+                status: 1,
             }
         }
     }
@@ -42,8 +43,13 @@ class MainToDoList extends Component {
                         <td>{key}</td>
                         <td>{ item.name }</td>
                         <td className="text-center">
-                        <span className="label label-success">
-                          Kích Hoạt
+                        <span
+                        className={classnames('label', {
+                            'label-success': item.status === 1,
+                            'label-warning': item.status === 0,
+                        })}
+                        >
+                            { item.status === 1 ? 'Kích hoạt' : 'Ẩn' }
                         </span>
                         </td>
                         <td className="text-center">
@@ -77,7 +83,10 @@ class MainToDoList extends Component {
                     <hr />
                 </div>
                 <div className="row">
-                    <AddTodo toDoSelected={this.state.toDoSelected} />
+                    <AddTodo
+                        toDoSelected={this.state.toDoSelected}
+                        update={toDoSelected => this.setState({toDoSelected: toDoSelected})}
+                    />
                     <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                         <div className="row">
                             <button type="button" className="btn btn-primary">
