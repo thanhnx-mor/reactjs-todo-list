@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import { connect } from "react-redux"
+import {editTask, showForm, deleteTask, onUpdateStatus} from "../actions";
+
 class TaskItem extends Component {
   onUpdateStatus = () => {
     this.props.onUpdateStatus(this.props.task.id)
   }
   onDeleteTask = () => {
-    this.props.onDeleteTask(this.props.task.id)
+    this.props.deleteTask(this.props.task.id)
   }
   onUpdateTask = () => {
-    this.props.onUpdateTask(this.props.task.id)
+    this.props.editTask(this.props.task)
+    this.props.showForm(true)
   }
   render() {
     var { task, index } = this.props
@@ -17,9 +21,6 @@ class TaskItem extends Component {
         <td>{index+1}</td>
         <td>{task.name}</td>
         <td className="text-center">
-            <span className="label">
-                Kích Hoạt
-            </span>
           <span
             className={classnames('label cursor-pointer', {
               'label-success': task.status,
@@ -47,4 +48,21 @@ class TaskItem extends Component {
     )
   }
 }
-export default TaskItem
+const mapActionToProps = (dispatch, props) => {
+  return {
+    editTask: (task) => {
+      dispatch(editTask(task))
+    },
+    deleteTask: (taskId) => {
+      dispatch(deleteTask(taskId))
+    },
+    showForm: (status) => {
+      dispatch(showForm(status))
+    },
+    onUpdateStatus: (id) => {
+      dispatch(onUpdateStatus(id))
+    },
+  }
+}
+
+export default connect(null, mapActionToProps)(TaskItem)

@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a657f85-11df-45b8-af26-4ae5b84f908d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TaskItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TaskList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/close-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/const/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/filterTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/status.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/taskEditing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/tasks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/to-do-list/AddTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/to-do-list/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Control.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaskForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaskItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/to-do-list" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,12 +71,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src/reducers" />
+      <recent name="$PROJECT_DIR$/src/redux" />
       <recent name="$PROJECT_DIR$/src/components/to-do-list" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,7 +110,9 @@
       <workItem from="1585043514940" duration="7589000" />
       <workItem from="1585195864120" duration="16310000" />
       <workItem from="1586834920622" duration="16729000" />
-      <workItem from="1587309135803" duration="15039000" />
+      <workItem from="1587309135803" duration="16354000" />
+      <workItem from="1587646422601" duration="584000" />
+      <workItem from="1587720300786" duration="29364000" />
     </task>
     <servers />
   </component>

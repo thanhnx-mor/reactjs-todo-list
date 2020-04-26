@@ -5,8 +5,8 @@ class Control extends Component {
   render() {
     return (
       <div className="row mt-15">
-        <Sort onSort={ this.props.onSort } />
-        <Search onSearch={ this.props.onSearch } />
+        <Sort />
+        <Search />
       </div>
     )
   }
