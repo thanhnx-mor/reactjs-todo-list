@@ -3,44 +3,9 @@ import './App.css';
 import TaskForm from "./components/TaskForm";
 import Control from "./components/Control";
 import TaskList from "./components/TaskList";
-import classnames from "classnames";
-import _ from 'lodash';
-import index from './redux/index'
 import { connect } from "react-redux"
-import statusReducer from "./reducers/status";
 import {editTask, showForm} from "./actions";
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-  onGenerateData = () => {
-    let tasks = [
-      {
-        id: this.generateID(),
-        name: 'Hoc lap PHP',
-        status: true
-      },
-      {
-        id: this.generateID(),
-        name: 'Hoc lap Javascript',
-        status: true
-      },
-      {
-        id: this.generateID(),
-        name: 'Hoc lap HTML',
-        status: true
-      },
-      {
-        id: this.generateID(),
-        name: 'Hoc lap CSS',
-        status: false
-      },
-    ]
-    this.setState({
-      tasks: tasks
-    })
-    localStorage.setItem('tasks', JSON.stringify(tasks))
-  }
   onToggleForm = () => {
     this.props.showForm(true);
     this.props.editTask({
