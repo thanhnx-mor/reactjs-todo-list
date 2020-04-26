@@ -3,9 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+/*Store*/
+import { createStore } from "redux";
+import myReducer from "./reducers/index";
+import { status, sort } from "./actions";
+import { Provider } from "react-redux"
+const store = createStore(
+  myReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+/*Provider*/
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={ store }>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
