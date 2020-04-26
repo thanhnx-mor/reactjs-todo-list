@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux"
+import { searchTask } from './../actions/index'
 
 class Search extends Component {
   constructor(props) {
@@ -15,10 +17,12 @@ class Search extends Component {
       [name]: value
     })
   }
-  onSearch = () => {
+  onSearch = (event) => {
     let { keyword } = this.state
+    if(event.charCode == 13){
+      this.props.onSearch(keyword)
+    }
     this.props.onSearch(keyword)
-
   }
   render() {
     let { keyword } = this.state
@@ -27,6 +31,7 @@ class Search extends Component {
           <div className="input-group">
             <input
               onChange={this.onChange}
+              onKeyPress={this.onSearch}
               name="keyword"
               type="text"
               className="form-control"
@@ -45,4 +50,13 @@ class Search extends Component {
     )
   }
 }
-export default Search
+const mapDispatchToProps = (dispatch, props) => {
+  return {
+    onSearch: (keyword) => {
+      dispatch(searchTask(keyword))
+    }
+
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Search)
